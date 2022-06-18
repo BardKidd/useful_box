@@ -11,7 +11,8 @@
     "baseUrl": ".",
     "paths": {
       // webpack.config 和 tsconfig.json 都要設定
-      "~~components": ["./src/components"]
+      "~~components": ["./src/components"],
+      "~~assets": ["./src/assets"]
     }
   }
 }

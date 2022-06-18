@@ -38,7 +38,8 @@ module.exports = {
     modules: [path.resolve(__dirname, "./src"), "node_modules"],
     // webpack.config 和 tsconfig.json 都要設定
     alias: {
-      "~~components": path.resolve(__dirname, "src/components/"),
+      "~~components": path.resolve(__dirname, "src/components"),
+      "~~assets": path.resolve(__dirname, "src/assets"),
     },
   },
   devtool: "inline-source-map",
