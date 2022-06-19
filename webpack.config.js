@@ -19,17 +19,19 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.tsx?$/,
-        use: "ts-loader",
-        exclude: /node_modules/,
-      },
-      {
         test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, "css-loader"],
+        use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"],
       },
       {
         test: /\.(png|jpg|gif)$i/,
         type: "asset/resource",
+      },
+      {
+        test: /\.(js|mjs|jsx|ts|tsx)$/,
+        use: {
+          loader: "babel-loader",
+        },
+        exclude: /node_modules/,
       },
     ],
   },
