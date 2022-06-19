@@ -9,7 +9,7 @@ const CommonCard = () => {
       <CardProvider>
         <CardWrapper>
           <CardHeader></CardHeader>
-          <Button color="yellow">點我</Button>
+          <Button onClick={() => alert("Hello!")}>View Detail</Button>
         </CardWrapper>
       </CardProvider>
     </>
