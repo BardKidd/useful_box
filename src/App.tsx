@@ -3,7 +3,9 @@ import { CommonCard } from "~~components";
 const App: React.FC = () => {
   return (
     <>
-      <div>Hello World</div>
+      <div className="useful_box-text-center useful_box-text-lg">
+        Hello World!
+      </div>
       <CommonCard></CommonCard>
     </>
   );
